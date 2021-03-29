@@ -11,6 +11,10 @@
   padding: 30px 10px;
   text-align: center;
   background-color: $Background-Color;
+  &-section-four,
+  &-section-five {
+    display: none;
+  }
   &-section-one {
     background-color: $MainBody-SectionOne-BgColor;
     padding: 10px;

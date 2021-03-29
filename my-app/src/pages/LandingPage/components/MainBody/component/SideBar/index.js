@@ -8,7 +8,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 import Elon from "../../../../../../assets/Landing-Page/MainBody/SideBar/elon.png";
-const Sidebar = ({ sideBarHandler }) => {
+const Sidebar = ({ sideBarHandler, menu }) => {
   return (
     <div className="sidebar-wrapper ">
       <div className="section-one">
@@ -20,11 +20,11 @@ const Sidebar = ({ sideBarHandler }) => {
           </div>
           <div className="section-one-sub-one-user-info">
             <div className="avatar" bgColor="white" mr="20px">
-              <img src={`${Elon}`} alt="elon musk" />
+              <img src={Elon} alt="elon musk" />
             </div>
             <div className="section-one-sub-one-user-info-text">
-              <p>Elon Musk A</p>
-              <p>ID: 9AD34990</p>
+              <p>{menu.response.data.user.name}</p>
+              <p>ID: {menu.response.data.user.id.value}</p>
             </div>
           </div>
           <div className="section-one-sub-one-user-info-view-profile">
