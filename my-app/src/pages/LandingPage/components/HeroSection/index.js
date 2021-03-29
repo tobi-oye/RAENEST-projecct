@@ -1,12 +1,12 @@
-import { Box } from "@chakra-ui/layout";
-
 import { HamburgerIcon } from "../../../../styles";
 
 const HeroSection = ({ sideBarHandler }) => {
   return (
-    <Box p="10px" onClick={() => sideBarHandler()} cursor="pointer">
-      <HamburgerIcon fontSize="2em" />
-    </Box>
+    <div className="hero-section">
+      <div className="hamburger" onClick={() => sideBarHandler()}>
+        <HamburgerIcon fontSize="2em" />
+      </div>
+    </div>
   );
 };
 

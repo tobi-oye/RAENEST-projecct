@@ -1,0 +1,40 @@
+@media screen and (min-width: 1200px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+      "hero hero hero hero"
+      "sidebar mainbody mainbody mainbody";
+  }
+  .sidebar {
+    grid-area: sidebar;
+    display: block !important;
+    position: relative;
+    width: 100%;
+  }
+  .main-body {
+    grid-area: mainbody;
+  }
+  .hero {
+    grid-area: hero;
+    pointer-events: none;
+  }
+  .close {
+    display: none;
+  }
+
+  .main-body-wrapper {
+    display: flex;
+    flex-direction: column;
+    .main-body-header {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      .main-body-section-one,
+      .main-body-section-two {
+        flex-basis: 49%;
+      }
+    }
+  }
+}

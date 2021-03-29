@@ -1,12 +1,8 @@
-import { Box } from "@chakra-ui/layout";
 import LandingPage from "../src/pages/LandingPage";
+import "../src/styles/scss/styles.scss";
 
 function App() {
-  return (
-    <Box>
-      <LandingPage />
-    </Box>
-  );
+  return <LandingPage />;
 }
 
 export default App;
