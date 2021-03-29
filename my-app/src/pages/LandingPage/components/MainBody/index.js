@@ -66,9 +66,7 @@ const MainBody = ({ menu }) => {
         </div>
         <div className="main-body-section-two">
           <p>Need cash instantly ?</p>
-          <button bgColor="rgb(67,1,194)" color="white" borderRadius="0px">
-            Apply for a Loan
-          </button>
+          <button>Apply for a Loan</button>
         </div>
       </div>
       <div className="main-body-section-three">
