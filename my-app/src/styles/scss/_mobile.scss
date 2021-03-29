@@ -86,12 +86,18 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      width: 100%;
+      margin-bottom: 10px;
       div {
+        flex-basis: 5%;
         div {
           display: flex;
           justify-content: space-between;
         }
       }
+    }
+    hr {
+      border: 0.5px solid gray;
     }
 
     &-sub-two {

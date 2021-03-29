@@ -1,4 +1,3 @@
-import { ChevronLeftIcon, ChevronRightIcon } from "@chakra-ui/icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faWallet,
@@ -11,6 +10,8 @@ import {
   faCreditCard,
   faFileContract,
   faFax,
+  faChevronLeft,
+  faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
 import chocolate from "../../../../assets/Landing-Page/MainBody/SectionFive/pic1.jpg";
 import cheeseCake from "../../../../assets/Landing-Page/MainBody/SectionFive/pic2.jpg";
@@ -75,7 +76,8 @@ const MainBody = ({ menu }) => {
           <p>Categories</p>
           <div>
             <div>
-              <ChevronLeftIcon /> <ChevronRightIcon />
+              <FontAwesomeIcon icon={faChevronLeft} size="1x" color="gray" />
+              <FontAwesomeIcon icon={faChevronRight} size="1x" color="gray" />
             </div>
           </div>
         </div>
@@ -107,8 +109,8 @@ const MainBody = ({ menu }) => {
           <p>MAKE PAYMENTS</p>
         </div>
         <div className="main-body-section-four-sub-one">
-          <div style={{ fontSize: "4em", color: "purple" }}>
-            <ChevronLeftIcon />
+          <div>
+            <FontAwesomeIcon icon={faChevronLeft} size="2x" color="purple" />
           </div>
           <div>
             <FontAwesomeIcon icon={faPlug} size="4x" />
@@ -130,8 +132,8 @@ const MainBody = ({ menu }) => {
             <FontAwesomeIcon icon={faFax} size="4x" />
             <p>Visa & Embassy Payments</p>
           </div>
-          <div style={{ fontSize: "4em", color: "purple" }}>
-            <ChevronRightIcon />
+          <div>
+            <FontAwesomeIcon icon={faChevronRight} size="2x" color="purple" />
           </div>
         </div>
       </div>

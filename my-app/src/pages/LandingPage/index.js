@@ -1,4 +1,3 @@
-import {} from "@chakra-ui/layout";
 import { useEffect, useState } from "react";
 import HeroSection from "../LandingPage/components/HeroSection";
 import MainBody from "../LandingPage/components/MainBody";
@@ -14,7 +13,7 @@ const LandingPage = () => {
 
   let [menu, setMenu] = useState("");
   useEffect(() => dashboard().then((response) => setMenu({ response })), []);
-  console.log(menu);
+
   return menu.response ? (
     <div className="wrapper">
       <div className="hero">
